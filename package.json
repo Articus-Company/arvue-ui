@@ -1,0 +1,23 @@
+{
+    "name": "arvue-ui",
+    "version": "0.1.0",
+    "description": "",
+    "scripts": {
+        "typecheck": "pnpm -r run type-check",
+        "lint": "eslint \"{app,.histoire,packages}/**/*.{ts,tsx,js,jsx,vue}\"",
+        "lint:fix": "eslint \"{app,.histoire,packages}/**/*.{ts,tsx,js,jsx,vue}\" --fix"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "MIT",
+    "packageManager": "pnpm@10.26.1",
+    "devDependencies": {
+        "@antfu/eslint-config": "^8.2.0",
+        "@vue/eslint-config-prettier": "^10.2.0",
+        "@vue/eslint-config-typescript": "^14.7.0",
+        "eslint": "^10.2.1",
+        "eslint-plugin-vue": "~10.9.0",
+        "typescript": "~6.0.3",
+        "vue-tsc": "^3.2.7"
+    }
+}

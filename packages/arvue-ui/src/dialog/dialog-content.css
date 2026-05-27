@@ -1,0 +1,42 @@
+.arvue-dialog-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: 10;
+    display: grid;
+    width: 100%;
+    max-width: calc(100% - 2rem);
+    gap: 2rem;
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    box-shadow: 0 0 70px  var(--dialog-shadow-color);
+    background: var(--background-color-blank);
+    box-sizing: border-box;
+}
+
+@media (min-width: 760px) {
+    .arvue-dialog-content {
+        max-width: 600px;
+    }
+}
+
+.arvue-dialog-content .arvue-dialog-close-button {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    border-radius: 0.125rem;
+    opacity: 0.7;
+    transition: opacity var(--timing-fast) ease-in-out;
+    width: 1rem;
+    height: 1rem;
+    color: inherit;
+}
+
+.arvue-dialog-content .arvue-dialog-close-button:hover {
+    opacity: 1;
+}
+
+.arvue-dialog-content .arvue-dialog-close-button:disabled {
+    pointer-events: none;
+}

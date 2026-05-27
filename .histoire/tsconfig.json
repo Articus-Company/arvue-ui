@@ -1,0 +1,7 @@
+{
+    "compilerOptions": {
+        "baseUrl": ".",
+        "moduleResolution": "bundler"
+    },
+    "includes": ["../packages/arvue-ui/src/**/*.vue", "../packages/arvue-ui/src/**/*.ts"]
+}
