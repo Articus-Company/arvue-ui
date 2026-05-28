@@ -9,7 +9,10 @@
             :class="clsx('arvue-sheet-content', props.class)"
             v-bind="{ ...$attrs, ...forwarded }"
         >
-            <div class="arvue-sheet-handle"/>
+            <div
+                v-if="showHandle"
+                class="arvue-sheet-handle"
+            />
             <slot/>
         </DrawerContent>
     </DrawerPortal>
@@ -24,6 +27,7 @@ export interface SheetContentEmits extends DialogContentEmits {
 
 export interface SheetContentProps extends DialogContentProps {
     class?: HTMLAttributes['class']
+    showHandle?: boolean
 }
 </script>
 
@@ -38,7 +42,9 @@ defineOptions({
     inheritAttrs: false,
 })
 
-const props = defineProps<SheetContentProps>()
+const props = withDefaults(defineProps<SheetContentProps>(), {
+    showHandle: true,
+})
 const emits = defineEmits<SheetContentEmits>()
 
 const delegatedProps = reactiveOmit(props, 'class')
