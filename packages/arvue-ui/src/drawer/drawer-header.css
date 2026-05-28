@@ -1,0 +1,6 @@
+.arvue-drawer-header {
+    display: flex;
+    flex-direction: column;
+    gap: 0.375rem;
+    padding: 1rem;
+}

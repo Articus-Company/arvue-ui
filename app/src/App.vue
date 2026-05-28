@@ -3,23 +3,22 @@
 </style>
 
 <template>
-    <Dialog>
-        <DialogTrigger as-child>
+    <Drawer>
+        <DrawerTrigger as-child>
             <button>
-                Open Dialog
+                Open Drawer
             </button>
-        </DialogTrigger>
-        <DialogContent>
-            <DialogHeader>
-                <DialogTitle>
+        </DrawerTrigger>
+        <DrawerContent>
+            <DrawerHeader>
+                <DrawerTitle>
                     Edit profile
-                </DialogTitle>
-                <DialogDescription>
-                    Make changes to your profile here. Click save when you're
-                    done.
-                </DialogDescription>
-            </DialogHeader>
-            <div class="fields">
+                </DrawerTitle>
+                <DrawerDescription>
+                    Make changes to your profile here. Click save when you're done.
+                </DrawerDescription>
+            </DrawerHeader>
+            <div class="fields custom-px-16">
                 <div class="field">
                     <div class="name">
                         Name
@@ -45,29 +44,29 @@
                     </div>
                 </div>
             </div>
-            <DialogFooter>
-                <DialogClose as-child>
-                    <button class="outlined">
-                        Cancel
-                    </button>
-                </DialogClose>
+            <DrawerFooter>
                 <button type="submit">
                     Save changes
                 </button>
-            </DialogFooter>
-        </DialogContent>
-    </Dialog>
+                <DrawerClose as-child>
+                    <button class="outlined">
+                        Cancel
+                    </button>
+                </DrawerClose>
+            </DrawerFooter>
+        </DrawerContent>
+    </Drawer>
 </template>
 
 <script setup lang="ts">
 import {
-    Dialog,
-    DialogClose,
-    DialogContent,
-    DialogDescription,
-    DialogFooter,
-    DialogHeader,
-    DialogTitle,
-    DialogTrigger,
+    Drawer,
+    DrawerClose,
+    DrawerContent,
+    DrawerDescription,
+    DrawerFooter,
+    DrawerHeader,
+    DrawerTitle,
+    DrawerTrigger,
 } from 'arvue-ui'
 </script>

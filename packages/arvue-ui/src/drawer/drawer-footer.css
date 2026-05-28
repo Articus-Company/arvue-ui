@@ -1,0 +1,11 @@
+.arvue-drawer-footer {
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem;
+}
+
+.arvue-drawer-footer button {
+    margin-right: 0;
+}
