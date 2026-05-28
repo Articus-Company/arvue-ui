@@ -47,7 +47,8 @@
         "@vueuse/core": "^14.3.0",
         "class-variance-authority": "^0.7.1",
         "motion-v": "^2.2.1",
-        "reka-ui": "^2.9.8"
+        "reka-ui": "^2.9.8",
+        "vaul-vue": "^0.4.1"
     },
     "devDependencies": {
         "@microsoft/api-extractor": "^7.58.7",
