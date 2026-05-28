@@ -3,9 +3,12 @@
 </style>
 
 <template>
-    <Primitive :class="clsx('arvue-dialog-title', props.class)">
+    <DialogTitle
+        :class="clsx('arvue-dialog-title', props.class)"
+        v-bind="delegatedProps"
+    >
         <slot/>
-    </Primitive>
+    </DialogTitle>
 </template>
 
 <script lang="ts">
@@ -18,8 +21,13 @@ export interface DialogTitleProps extends RekaDialogTitleProps {
 </script>
 
 <script setup lang="ts">
+import { reactiveOmit } from '@vueuse/core'
 import { clsx } from 'clsx'
-import { Primitive } from 'reka-ui'
+import { DialogTitle } from 'reka-ui'
 
-const props = defineProps<DialogTitleProps>()
+const props = withDefaults(defineProps<DialogTitleProps>(), {
+    as: 'h3',
+})
+
+const delegatedProps = reactiveOmit(props, 'class')
 </script>

@@ -1,5 +1,3 @@
 .arvue-dialog-title {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: var(--text-color-stronger);
+    margin: 0;
 }

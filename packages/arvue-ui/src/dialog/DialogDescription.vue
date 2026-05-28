@@ -3,9 +3,12 @@
 </style>
 
 <template>
-    <Primitive :class="clsx('arvue-dialog-description', props.class)">
+    <DialogDescription
+        :class="clsx('arvue-dialog-description', props.class)"
+        v-bind="delegatedProps"
+    >
         <slot/>
-    </Primitive>
+    </DialogDescription>
 </template>
 
 <script lang="ts">
@@ -18,8 +21,13 @@ export interface DialogDescriptionProps extends RekaDialogDescriptionProps {
 </script>
 
 <script setup lang="ts">
+import { reactiveOmit } from '@vueuse/core'
 import { clsx } from 'clsx'
-import { Primitive } from 'reka-ui'
+import { DialogDescription } from 'reka-ui'
 
-const props = defineProps<DialogDescriptionProps>()
+const props = withDefaults(defineProps<DialogDescriptionProps>(), {
+    as: 'p',
+})
+
+const delegatedProps = reactiveOmit(props, 'class')
 </script>
