@@ -3,3 +3,8 @@
     align-items: center;
     gap: 0.25rem;
 }
+
+.arvue-autocomplete-input-wrapper .state-with-inner-icon {
+    max-width: 100%;
+}
+
