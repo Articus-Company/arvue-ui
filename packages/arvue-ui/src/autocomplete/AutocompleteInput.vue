@@ -1,3 +1,7 @@
+<style>
+@import './autocomplete-input.css';
+</style>
+
 <template>
     <div class="arvue-autocomplete-input-wrapper">
         <AutocompleteAnchor
