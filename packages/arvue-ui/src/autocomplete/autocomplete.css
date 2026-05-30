@@ -1,4 +1,5 @@
 .arvue-autocomplete {
     position: relative;
+    width: fit-content;
     max-width: 100%;
 }
