@@ -1,0 +1,11 @@
+.arvue-combobox-content {
+    width: var(--reka-popper-anchor-width);
+    background: var(--background-color-blank);
+    box-shadow: 0 0.25rem 1rem -0.25rem rgba(0, 0, 0, 0.1);
+    margin-top: .5em;
+    border-radius: 0.5em;
+}
+
+.arvue-combobox div[data-reka-popper-content-wrapper] {
+    z-index: 110 !important;
+}
