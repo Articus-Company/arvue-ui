@@ -5,3 +5,7 @@
     margin-top: .5em;
     border-radius: 0.5em;
 }
+
+.arvue-autocomplete div[data-reka-popper-content-wrapper] {
+    z-index: 110 !important;
+}
