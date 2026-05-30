@@ -1,0 +1,10 @@
+.arvue-combobox-input-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.arvue-combobox-input-wrapper .state-with-inner-icon {
+    max-width: 100%;
+}
+

@@ -1,0 +1,14 @@
+.arvue-combobox-item {
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    padding: 0.5em 1em;
+    position: relative;
+    user-select: none;
+    border-radius: 0.5em;
+}
+
+.arvue-combobox-item[data-highlighted] {
+    outline: none;
+    background: var(--background-color-zebra-row-odd-hover);
+}
