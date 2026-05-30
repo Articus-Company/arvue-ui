@@ -3,17 +3,15 @@
 </style>
 
 <template>
-    <AutocompletePortal>
-        <AutocompleteContent
-            v-bind="{ ...$attrs, ...forwarded }"
-            :class="clsx('arvue-autocomplete-content', props.class)"
-            position="popper"
-        >
-            <AutocompleteViewport>
-                <slot/>
-            </AutocompleteViewport>
-        </AutocompleteContent>
-    </AutocompletePortal>
+    <AutocompleteContent
+        v-bind="{ ...$attrs, ...forwarded }"
+        :class="clsx('arvue-autocomplete-content', props.class)"
+        position="popper"
+    >
+        <AutocompleteViewport>
+            <slot/>
+        </AutocompleteViewport>
+    </AutocompleteContent>
 </template>
 
 <script lang="ts">
@@ -30,7 +28,7 @@ export interface AutocompleteContentEmits extends ComboboxContentEmits {}
 import { reactiveOmit } from '@vueuse/core'
 import { clsx } from 'clsx'
 import { AutocompleteContent, useForwardPropsEmits } from 'reka-ui'
-import { AutocompletePortal, AutocompleteViewport } from '.'
+import { AutocompleteViewport } from '.'
 
 defineOptions({
     inheritAttrs: false,
