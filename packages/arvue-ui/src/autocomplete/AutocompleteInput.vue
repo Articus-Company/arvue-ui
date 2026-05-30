@@ -1,26 +1,28 @@
 <template>
-    <AutocompleteAnchor
-        class="state-with-inner-icon right"
-        :reference="inputRef?.$el"
-    >
-        <AutocompleteInput
-            v-bind="{ ...$attrs, ...forwarded }"
-            ref="inputRef"
-        />
-        <AutocompleteTrigger
-            v-if="showTriggerButton"
-            class="icon"
+    <div class="arvue-autocomplete-input-wrapper">
+        <AutocompleteAnchor
+            class="state-with-inner-icon right"
+            :reference="inputRef?.$el"
         >
-            <i class="fas fa-chevron-down"/>
-        </AutocompleteTrigger>
-    </AutocompleteAnchor>
-    <AutocompleteCancel
-        v-if="showCancelButton"
-        class="icon"
-        @click="emits('cancel')"
-    >
-        <i class="fas fa-times"/>
-    </AutocompleteCancel>
+            <AutocompleteInput
+                v-bind="{ ...$attrs, ...forwarded }"
+                ref="inputRef"
+            />
+            <AutocompleteTrigger
+                v-if="showTriggerButton"
+                class="icon"
+            >
+                <i class="fas fa-chevron-down"/>
+            </AutocompleteTrigger>
+        </AutocompleteAnchor>
+        <AutocompleteCancel
+            v-if="showCancelButton"
+            class="icon"
+            @click="emits('cancel')"
+        >
+            <i class="fas fa-times"/>
+        </AutocompleteCancel>
+    </div>
 </template>
 
 <script lang="ts">
