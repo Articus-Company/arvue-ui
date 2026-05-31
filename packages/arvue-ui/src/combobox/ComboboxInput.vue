@@ -5,7 +5,7 @@
 <template>
     <div class="arvue-combobox-input-wrapper">
         <ComboboxAnchor
-            class="state-with-inner-icon right"
+            :class="{ 'state-with-inner-icon right': showTriggerButton }"
             :reference="inputRef?.$el"
         >
             <ComboboxInput

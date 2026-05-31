@@ -5,7 +5,7 @@
 <template>
     <div class="arvue-autocomplete-input-wrapper">
         <AutocompleteAnchor
-            class="state-with-inner-icon right"
+            :class="{ 'state-with-inner-icon right': showTriggerButton }"
             :reference="inputRef?.$el"
         >
             <AutocompleteInput
