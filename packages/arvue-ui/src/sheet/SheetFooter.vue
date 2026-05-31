@@ -1,5 +1,5 @@
 <style>
-@import "sheet-footer.css";
+@import './sheet-footer.css';
 </style>
 
 <template>

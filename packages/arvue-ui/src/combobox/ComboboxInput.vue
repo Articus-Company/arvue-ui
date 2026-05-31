@@ -1,5 +1,5 @@
 <style>
-@import 'combobox-input.css';
+@import './combobox-input.css';
 </style>
 
 <template>

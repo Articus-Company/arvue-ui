@@ -1,5 +1,5 @@
 <style>
-@import "./dialog-footer.css";
+@import './dialog-footer.css';
 </style>
 
 <template>

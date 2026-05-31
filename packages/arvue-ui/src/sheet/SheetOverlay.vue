@@ -1,5 +1,5 @@
 <style>
-@import 'sheet-overlay.css';
+@import './sheet-overlay.css';
 </style>
 
 <template>

@@ -1,5 +1,5 @@
 <style>
-@import 'combobox-separator.css';
+@import './combobox-separator.css';
 </style>
 
 <template>

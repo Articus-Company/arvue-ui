@@ -1,5 +1,5 @@
 <style>
-@import "./dialog-description.css";
+@import './dialog-description.css';
 </style>
 
 <template>

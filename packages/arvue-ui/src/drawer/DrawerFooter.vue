@@ -1,5 +1,5 @@
 <style>
-@import "./drawer-footer.css";
+@import './drawer-footer.css';
 </style>
 
 <template>

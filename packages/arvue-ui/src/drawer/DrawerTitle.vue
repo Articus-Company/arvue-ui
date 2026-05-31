@@ -1,5 +1,5 @@
 <style>
-@import "./drawer-title.css";
+@import './drawer-title.css';
 </style>
 
 <template>

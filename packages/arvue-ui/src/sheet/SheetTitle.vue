@@ -1,5 +1,5 @@
 <style>
-@import "sheet-title.css";
+@import './sheet-title.css';
 </style>
 
 <template>
