@@ -22,6 +22,15 @@ export default defineConfig({
             ],
         }),
     ],
+    resolve: {
+        alias: {
+            /**
+             * vite postcss не резолвит прямые пути до стилей
+             * @see packages/arvue-ui/src/sonner/sonner.css
+             */
+            'vue-sonner/lib/index.css': 'vue-sonner/style.css',
+        },
+    },
     histoire: {
         plugins: [HstVue()],
         setupFile: './histoire.setup.ts',
@@ -33,7 +42,6 @@ export default defineConfig({
             title: 'Arvue UI',
         },
     },
-
     server: {
         fs: {
             // Allow serving files from two level up to the project root
