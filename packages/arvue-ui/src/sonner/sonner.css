@@ -1,0 +1,91 @@
+/* tsdown/css (postcss-import) не резолвит пути из package.json у пакета, поэтому путь до стилей прямой */
+@import 'vue-sonner/lib/index.css';
+
+.arvue-sonner[data-sonner-toaster] {
+    --offset-top: 5.5rem !important;
+    --offset-right: 1.5rem !important;
+    --offset-left: 1.5rem !important;
+    z-index: 1060;
+}
+
+.arvue-sonner[data-sonner-toaster][data-sonner-theme='light'],
+.arvue-sonner[data-sonner-toaster][data-sonner-theme='dark'] {
+    --normal-bg: var(--alert-background-color);
+    --normal-border: var(--alert-border-color);
+    --normal-text: var(--alert-text-color);
+
+    --success-bg: var(--alert-success-background-color);
+    --success-border: var(--alert-success-border-color);
+    --success-text: var(--alert-success-text-color);
+
+    --info-bg: var(--alert-info-background-color);
+    --info-border: var(--alert-info-border-color);
+    --info-text: var(--alert-info-text-color);
+
+    --warning-bg: var(--alert-warning-background-color);
+    --warning-border: var(--alert-warning-border-color);
+    --warning-text: var(--alert-warning-text-color);
+
+    --error-bg: var(--alert-danger-background-color);
+    --error-border: var(--alert-danger-border-color);
+    --error-text: var(--alert-danger-text-color);
+
+    --border-radius: 0.75em;
+}
+
+.arvue-sonner li[data-sonner-toast][data-styled="true"] {
+    padding: 0.75em 1em;
+    font-weight: normal;
+    font-style: normal;
+    font-size: initial;
+    border-width: 0.125rem;
+    transition: background-color var(--timing-default),
+                opacity var(--timing-default),
+                transform var(--timing-default),
+                height var(--timing-default),
+                box-shadow var(--timing-fast);
+}
+
+.arvue-sonner li[data-sonner-toast][data-styled='true'] [data-description] {
+    color: var(--text-color-hint);
+    font-size: 81.25%;
+}
+
+.arvue-sonner li[data-sonner-toast][data-styled='true'] [data-button] {
+    border-radius: .5em;
+    background: var(--accent-color);
+    margin-left: var(--toast-button-margin-start);
+    outline: 0 none;
+    box-shadow: 0 0.25em 0.75em -0.25em rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    color: var(--white);
+    transition: color 0.1s ease-in-out,
+                background-color 0.1s ease-in-out,
+                border-color 0.1s ease-in-out,
+                box-shadow 0.1s ease-in-out,
+                opacity 0.1s ease-in-out;
+}
+
+.arvue-sonner li[data-sonner-toast][data-styled='true'] [data-button]:hover {
+    box-shadow: none;
+    background: var(--accent-color);
+}
+
+.arvue-sonner li[data-sonner-toast][data-styled='true'] [data-close-button] {
+    border-width: 0.125rem;
+    border-color: inherit;
+    margin: 0;
+}
+
+.arvue-sonner li[data-sonner-toast][data-styled='true'] [data-close-button] [data-icon] {
+    display: inline-block;
+    margin: 0;
+    color: var(--dark-gray);
+    height: 12px;
+    width: 12px;
+}
+
+html[data-theme="dark"] .arvue-sonner li[data-sonner-toast][data-styled='true'] [data-close-button] [data-icon],
+.arvue-sonner li[data-sonner-toast][data-type='error'][data-styled='true'] [data-close-button] [data-icon]{
+    color: var(--white);
+}
