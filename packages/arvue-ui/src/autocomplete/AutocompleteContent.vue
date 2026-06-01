@@ -34,7 +34,12 @@ defineOptions({
     inheritAttrs: false,
 })
 
-const props = defineProps<AutocompleteContentProps>()
+const props = withDefaults(
+    defineProps<AutocompleteContentProps>(),
+    {
+        sideOffset: 8,
+    },
+)
 const emits = defineEmits<AutocompleteContentEmits>()
 
 const delegatedProps = reactiveOmit(props, 'class')

@@ -1,11 +1,10 @@
 .arvue-combobox-content {
-    width: var(--reka-popper-anchor-width);
+    width: var(--reka-combobox-trigger-width);
     background: var(--background-color-blank);
     box-shadow: 0 0.25rem 1rem -0.25rem rgba(0, 0, 0, 0.1);
-    margin-top: .5em;
+    border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 0.5em;
-}
-
-.arvue-combobox div[data-reka-popper-content-wrapper] {
-    z-index: 110 !important;
+    max-height: var(--reka-combobox-content-available-height);
+    transform-origin: var(--reka-combobox-content-transform-origin);
+    z-index: 110;
 }

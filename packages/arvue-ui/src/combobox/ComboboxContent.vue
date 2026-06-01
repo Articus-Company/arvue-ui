@@ -37,7 +37,12 @@ defineOptions({
     inheritAttrs: false,
 })
 
-const props = defineProps<ComboboxContentProps>()
+const props = withDefaults(
+    defineProps<ComboboxContentProps>(),
+    {
+        sideOffset: 8,
+    },
+)
 const emits = defineEmits<ComboboxContentEmits>()
 
 const delegatedProps = reactiveOmit(props, 'class')
