@@ -3,15 +3,37 @@
 </style>
 
 <template>
-    <ComboboxContent
-        v-bind="{ ...$attrs, ...forwarded }"
-        :class="clsx('arvue-combobox-content', props.class)"
-        position="popper"
-    >
-        <ComboboxViewport>
-            <slot/>
-        </ComboboxViewport>
-    </ComboboxContent>
+    <AnimatePresence>
+        <ComboboxContent
+            v-bind="{ ...$attrs, ...forwarded }"
+            :class="clsx('arvue-combobox-content', props.class)"
+            position="popper"
+            as-child
+        >
+            <Motion
+                :initial="{
+                    y: '-5px',
+                    opacity: 0,
+                }"
+                :animate="{
+                    y: 0,
+                    opacity: 1,
+                }"
+                :exit="{
+                    y: '-5px',
+                    opacity: 0,
+                }"
+                :transition="{
+                    duration: .15,
+                    ease: 'easeInOut',
+                }"
+            >
+                <ComboboxViewport>
+                    <slot/>
+                </ComboboxViewport>
+            </Motion>
+        </ComboboxContent>
+    </AnimatePresence>
 </template>
 
 <script lang="ts">
@@ -30,6 +52,7 @@ export interface ComboboxContentEmits extends RekaComboboxContentEmits {}
 <script setup lang="ts">
 import { reactiveOmit } from '@vueuse/core'
 import { clsx } from 'clsx'
+import { AnimatePresence, Motion } from 'motion-v'
 import { ComboboxContent, useForwardPropsEmits } from 'reka-ui'
 import { ComboboxViewport } from '.'
 

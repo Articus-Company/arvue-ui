@@ -3,15 +3,37 @@
 </style>
 
 <template>
-    <AutocompleteContent
-        v-bind="{ ...$attrs, ...forwarded }"
-        :class="clsx('arvue-autocomplete-content', props.class)"
-        position="popper"
-    >
-        <AutocompleteViewport>
-            <slot/>
-        </AutocompleteViewport>
-    </AutocompleteContent>
+    <AnimatePresence>
+        <AutocompleteContent
+            v-bind="{ ...$attrs, ...forwarded }"
+            :class="clsx('arvue-autocomplete-content', props.class)"
+            position="popper"
+            as-child
+        >
+            <Motion
+                :initial="{
+                    y: '-5px',
+                    opacity: 0,
+                }"
+                :animate="{
+                    y: 0,
+                    opacity: 1,
+                }"
+                :exit="{
+                    y: '-5px',
+                    opacity: 0,
+                }"
+                :transition="{
+                    duration: .15,
+                    ease: 'easeInOut',
+                }"
+            >
+                <AutocompleteViewport>
+                    <slot/>
+                </AutocompleteViewport>
+            </Motion>
+        </AutocompleteContent>
+    </AnimatePresence>
 </template>
 
 <script lang="ts">
@@ -27,6 +49,7 @@ export interface AutocompleteContentEmits extends ComboboxContentEmits {}
 <script setup lang="ts">
 import { reactiveOmit } from '@vueuse/core'
 import { clsx } from 'clsx'
+import { AnimatePresence, Motion } from 'motion-v'
 import { AutocompleteContent, useForwardPropsEmits } from 'reka-ui'
 import { AutocompleteViewport } from '.'
 
