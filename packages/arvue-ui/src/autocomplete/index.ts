@@ -8,10 +8,6 @@ export {
     type AutocompleteAnchorProps,
 } from './AutocompleteAnchor.vue'
 export {
-    default as AutocompleteArrow,
-    type AutocompleteArrowProps,
-} from './AutocompleteArrow.vue'
-export {
     default as AutocompleteCancel,
     type AutocompleteCancelProps,
 } from './AutocompleteCancel.vue'
