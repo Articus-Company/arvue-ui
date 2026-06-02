@@ -47,7 +47,6 @@
 }
 
 .arvue-sonner li[data-sonner-toast][data-styled='true'] [data-description] {
-    color: var(--text-color-hint);
     font-size: 81.25%;
 }
 
