@@ -1,3 +1,4 @@
+export * from './aspect-ratio'
 export * from './autocomplete'
 export * from './combobox'
 export * from './dialog'
