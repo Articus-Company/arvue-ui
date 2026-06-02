@@ -22,11 +22,14 @@ export interface AutocompleteItemEmits extends ComboboxItemEmits {}
 </script>
 
 <script setup lang="ts">
+import { reactiveOmit } from '@vueuse/core'
 import { clsx } from 'clsx'
 import { AutocompleteItem, useForwardPropsEmits } from 'reka-ui'
 
 const props = defineProps<AutocompleteItemProps>()
 const emits = defineEmits<AutocompleteItemEmits>()
 
-const forwarded = useForwardPropsEmits(props, emits)
+const delegatedProps = reactiveOmit(props, 'class')
+
+const forwarded = useForwardPropsEmits(delegatedProps, emits)
 </script>
