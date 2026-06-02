@@ -1,0 +1,71 @@
+.arvue-select-trigger {
+    padding: 0.1875em 0.375em;
+    line-height: 1.5em;
+    margin: 0;
+    border: 0.125em solid var(--border-color-input);
+    border-radius: 0.5em;
+    color: var(--text-color-input);
+    outline: none;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-size: 100%;
+    background: var(--background-color-input);
+    width: fit-content;
+    transition: color 150ms;
+    white-space: nowrap;
+    justify-content: space-between;
+    display: flex;
+    gap: 1rem;
+    max-width: 100%;
+}
+
+.arvue-select-trigger.outlined {
+    border-color: var(--border-color-input-outlined);
+}
+
+.arvue-select-trigger.small {
+    font-size: 93.75%;
+}
+
+.arvue-select-trigger.smaller {
+    font-size: 87.5%;
+}
+
+.arvue-select-trigger.smallest {
+    font-size: 81.25%;
+}
+
+.arvue-select-trigger.large {
+    font-size: 112.5%;
+}
+
+.arvue-select-trigger.larger {
+    font-size: 125%;
+}
+
+.arvue-select-trigger.largest {
+    font-size: 150%;
+}
+
+.arvue-select-trigger.full-width {
+    width: 100%;
+}
+
+.arvue-select-trigger:disabled,
+.arvue-select-trigger[disabled="true"] {
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+.arvue-select-trigger[data-placeholder] {
+    color: var(--text-color-hint-strong);
+    user-select: none;
+}
+
+.arvue-select-trigger-icon {
+    pointer-events: none;
+    flex-shrink: 0;
+    width: 1em;
+    height: 1.5em;
+    color: var(--text-color-hint-strong);
+}
