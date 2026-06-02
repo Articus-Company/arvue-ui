@@ -1,10 +1,12 @@
 .arvue-dropdown-menu-label {
-    padding: .25em .75em;
+    color: var(--text-color-hint-strong);
+    padding: 0.5rem 0.75rem;
     font-size: .75em;
-    font-weight: 600;
+    line-height: 1rem;
+    font-weight: bold;
 }
 
 .arvue-dropdown-menu-label.arvue-dropdown-menu-label-inset {
-    padding-left: 1.25rem;
+    padding-left: 1.5rem;
 }
 

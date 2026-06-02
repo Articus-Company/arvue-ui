@@ -1,6 +1,7 @@
 .arvue-combobox-label {
-    padding: .25em .75em;
+    color: var(--text-color-hint-strong);
+    padding: 0.5rem 1rem;
     font-size: .75em;
-    line-height: 1.2em;
-    font-weight: 600;
+    line-height: 1rem;
+    font-weight: bold;
 }
