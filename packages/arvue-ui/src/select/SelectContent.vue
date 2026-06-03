@@ -68,6 +68,7 @@ defineOptions({
 
 const props = withDefaults(defineProps<SelectContentProps>(), {
     sideOffset: 8,
+    collisionPadding: 0,
 })
 const emits = defineEmits<SelectContentEmits>()
 
