@@ -1,0 +1,29 @@
+.arvue-accordion-trigger {
+    display: flex;
+    flex: 1;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 1rem;
+    text-align: left;
+    transition: all 0.15s ease;
+    outline: none;
+}
+
+.arvue-accordion-trigger:disabled {
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+.arvue-accordion-trigger[data-state="open"] > svg {
+    transform: rotate(180deg);
+}
+
+.arvue-accordion-trigger .arvue-accordion-trigger-icon {
+    color: var(--text-color-hint);
+    pointer-events: none;
+    width: 1rem;
+    height: 1rem;
+    flex-shrink: 0;
+    transform: translateY(0.125rem);
+    transition: transform 200ms cubic-bezier(0.4, 0, 0.2, 1);
+}

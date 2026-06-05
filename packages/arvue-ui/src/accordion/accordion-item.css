@@ -1,0 +1,7 @@
+.arvue-accordion-item {
+    border-bottom: 1px solid var(--border-color-soft);
+}
+
+.arvue-accordion-item:last-child {
+    border-bottom: none;
+}
