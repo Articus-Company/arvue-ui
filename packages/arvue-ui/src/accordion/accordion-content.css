@@ -1,0 +1,33 @@
+.arvue-accordion-content {
+    overflow: hidden;
+}
+
+.arvue-accordion-content .arvue-accordion-content-block {
+    padding: 0 1rem 1rem;
+}
+
+.arvue-accordion-content[data-state="open"] {
+    animation: arvueAccordionSlideDown var(--timing-fast) ease-out;
+}
+
+.arvue-accordion-content[data-state="closed"] {
+    animation: arvueAccordionSlideUp var(--timing-fast) ease-in;
+}
+
+@keyframes arvueAccordionSlideDown {
+    from {
+        height: 0;
+    }
+    to {
+        height: var(--reka-accordion-content-height);
+    }
+}
+
+@keyframes arvueAccordionSlideUp {
+    from {
+        height: var(--reka-accordion-content-height);
+    }
+    to {
+        height: 0;
+    }
+}
