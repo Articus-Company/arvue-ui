@@ -1,0 +1,9 @@
+.arvue-context-menu-content {
+    background: var(--background-color-blank);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem; box-shadow: 0 0.25rem 1rem -0.25rem rgba(0, 0, 0, 0.1);
+    z-index: 110;
+    max-height: var(--reka-context-menu-content-available-height);
+    transform-origin: var(--reka-context-menu-content-transform-origin);
+    overflow: auto;
+}

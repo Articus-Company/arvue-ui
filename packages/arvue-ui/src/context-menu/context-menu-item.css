@@ -1,0 +1,27 @@
+.arvue-context-menu-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.875rem;
+    outline: none;
+    user-select: none;
+    -webkit-user-select: none;
+    color: var(--menu-link-color);
+    padding: 0.5rem 0.75rem;
+    cursor: pointer;
+}
+
+.arvue-context-menu-item:focus, .arvue-context-menu-item:hover {
+    background: var(--menu-background-color-hover);
+    color: var(--menu-link-color-hover);
+}
+
+.arvue-context-menu-item[data-disabled] {
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+.arvue-context-menu-item.arvue-context-menu-item-inset {
+    padding-left: 1.5rem;
+}
