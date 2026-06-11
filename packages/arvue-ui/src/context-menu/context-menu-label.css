@@ -1,0 +1,12 @@
+.arvue-context-menu-label {
+    color: var(--text-color-hint-strong);
+    padding: 0.5rem 0.75rem;
+    font-size: .75em;
+    line-height: 1rem;
+    font-weight: bold;
+}
+
+.arvue-context-menu-label.arvue-context-menu-label-inset {
+    padding-left: 1.5rem;
+}
+
