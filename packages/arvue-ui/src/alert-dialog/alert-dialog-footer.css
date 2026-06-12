@@ -1,0 +1,16 @@
+.arvue-alert-dialog-footer {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 0.5rem;
+}
+
+.arvue-alert-dialog-footer button {
+    margin-right: 0;
+}
+
+@media (min-width: 760px) {
+    .arvue-alert-dialog-footer {
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+}

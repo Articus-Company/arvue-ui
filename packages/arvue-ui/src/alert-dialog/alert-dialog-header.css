@@ -1,0 +1,12 @@
+.arvue-alert-dialog-header {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+}
+
+@media (min-width: 760px) {
+    .arvue-alert-dialog-header {
+        text-align: left;
+    }
+}
