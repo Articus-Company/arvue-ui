@@ -1,0 +1,14 @@
+.arvue-sidebar-content {
+    display: flex;
+    min-height: 0;
+    flex: 1;
+    flex-direction: column;
+    gap: 0.5rem;
+    overflow: auto;
+    box-sizing: border-box;
+    scrollbar-width: none;
+}
+
+.arvue-sidebar-wrapper[data-collapsible="icon"] .arvue-sidebar-content {
+    overflow: hidden;
+}

@@ -40,6 +40,7 @@ export default defineConfig([
                             return `${ns}/${name[0].toLowerCase() + name.slice(1)}`
                         },
                     },
+                    { test: /src[\\/]sidebar[\\/]utils/, name: 'sidebar/utils' },
                 ],
             },
         },

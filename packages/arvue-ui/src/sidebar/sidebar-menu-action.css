@@ -1,0 +1,29 @@
+.arvue-sidebar-menu-action {
+    color: var(--menu-link-color);
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    aspect-ratio: 1;
+    width: 2.3125rem;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.375rem;
+    padding: 0.5rem;
+    box-sizing: border-box;
+    outline-style: none;
+}
+
+.arvue-sidebar-menu-action:hover {
+    color: var(--menu-link-color-hover) !important;
+    background: var(--background-color-input-solid) !important;
+}
+
+.arvue-sidebar-menu-action[aria-disabled="true"] {
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+.arvue-sidebar-wrapper[data-collapsible="icon"] .arvue-sidebar-menu-action {
+    display: none;
+}
