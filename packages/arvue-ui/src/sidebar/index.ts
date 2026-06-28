@@ -79,3 +79,4 @@ export {
     default as SidebarTrigger,
     type SidebarTriggerProps,
 } from './SidebarTrigger.vue'
+export { useSidebar } from './utils'
