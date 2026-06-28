@@ -1,0 +1,106 @@
+.arvue-sidebar {
+    display: flex;
+    height: calc(100svh - var(--arvue-sidebar-offset-top));
+    width: var(--arvue-sidebar-width);
+    flex-direction: column;
+    background-color: var(--background-color);
+    box-sizing: border-box;
+    min-height: 0;
+    flex-shrink: 0;
+}
+
+.arvue-sidebar-mobile {
+    width: var(--arvue-sidebar-width) !important;
+    padding: 0;
+}
+
+.arvue-sidebar-mobile-inner {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.arvue-sidebar-wrapper {
+    display: none;
+    flex-shrink: 0;
+}
+
+.arvue-sidebar-gap {
+    position: relative;
+    width: var(--arvue-sidebar-width);
+    background: transparent;
+    box-sizing: border-box;
+
+}
+
+.arvue-sidebar-wrapper[data-collapsible="offcanvas"] .arvue-sidebar-gap {
+    width: 0;
+}
+
+.arvue-sidebar-wrapper[data-side="right"] .arvue-sidebar-gap {
+    rotate: 180deg;
+}
+
+.arvue-sidebar-wrapper[data-collapsible="icon"] .arvue-sidebar-gap {
+    width: var(--arvue-sidebar-width-icon);
+}
+
+.arvue-sidebar-wrapper[data-variant="floating"] .arvue-sidebar-gap,
+.arvue-sidebar-wrapper[data-variant="inset"] .arvue-sidebar-gap {
+    width: calc(var(--arvue-sidebar-width-icon) + 1rem);
+}
+
+.arvue-sidebar-panel {
+    position: fixed;
+    top: var(--arvue-sidebar-offset-top);
+    bottom: 0;
+    z-index: 10;
+    display: none;
+    height: calc(100svh - var(--arvue-sidebar-offset-top));
+    width: var(--arvue-sidebar-width);
+    box-sizing: border-box;
+}
+
+.arvue-sidebar-wrapper[data-side="left"] .arvue-sidebar-panel {
+    left: 0;
+}
+
+.arvue-sidebar-wrapper[data-side="right"] .arvue-sidebar-panel {
+    right: 0;
+}
+
+.arvue-sidebar-wrapper[data-variant="floating"] .arvue-sidebar-panel,
+.arvue-sidebar-wrapper[data-variant="inset"] .arvue-sidebar-panel {
+    padding: 0.5rem;
+}
+
+.arvue-sidebar-wrapper[data-variant="floating"][data-collapsible="icon"] .arvue-sidebar-panel,
+.arvue-sidebar-wrapper[data-variant="inset"][data-collapsible="icon"] .arvue-sidebar-panel {
+    width: calc(var(--arvue-sidebar-width-icon) + 1rem + 2px);
+}
+
+.arvue-sidebar-inner {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background: var(--background-color);
+    box-sizing: border-box;
+}
+
+.arvue-sidebar-wrapper[data-variant="floating"] .arvue-sidebar-inner {
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+@media (min-width: 761px) {
+    .arvue-sidebar-wrapper {
+        display: block;
+    }
+
+    .arvue-sidebar-panel {
+        display: flex;
+    }
+}

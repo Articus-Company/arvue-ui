@@ -1,0 +1,30 @@
+.arvue-sidebar-group-action {
+    box-sizing: border-box;
+    position: absolute;
+    top: 0.875rem;
+    right: 0.75rem;
+    display: flex;
+    aspect-ratio: 1 / 1;
+    width: 1.25rem;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.375rem;
+    padding: 0;
+    outline: none;
+    color: var(--menu-action-glyph-color);
+    font-size: 1rem;
+}
+
+.arvue-sidebar-group-action:hover {
+    color: var(--menu-action-glyph-color-hover);
+}
+
+.arvue-sidebar-group-action > svg {
+    width: 1rem;
+    height: 1rem;
+    flex-shrink: 0;
+}
+
+.arvue-sidebar-wrapper[data-collapsible="icon"] .arvue-sidebar-group-action {
+    display: none;
+}

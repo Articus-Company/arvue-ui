@@ -1,0 +1,17 @@
+.arvue-sidebar-menu-sub {
+    margin-left: 0.875rem;
+    margin-right: 0.875rem;
+    display: flex;
+    min-width: 0;
+    transform: translateX(1px);
+    flex-direction: column;
+    gap: 0.25rem;
+    border-left: 1px solid var(--border-color-hard);
+    padding: 0.125rem 0.625rem;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+.arvue-sidebar-wrapper[data-collapsible="icon"] .arvue-sidebar-menu-sub {
+    display: none;
+}

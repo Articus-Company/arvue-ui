@@ -1,0 +1,8 @@
+.arvue-sidebar-separator {
+    width: auto;
+    margin: 0 0.5rem;
+    background-color: var(--border-color-soft);
+    flex-shrink: 0;
+    box-sizing: border-box;
+    height: 1px;
+}

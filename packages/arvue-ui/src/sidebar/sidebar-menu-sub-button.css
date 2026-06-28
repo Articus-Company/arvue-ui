@@ -1,0 +1,37 @@
+.arvue-sidebar-menu-sub-button {
+    overflow: hidden;
+    padding: 0.5rem;
+    background: transparent !important;
+    color: var(--menu-link-color);
+    box-shadow: none;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    outline-offset: 2px;
+    gap: 0.5rem;
+    margin: 0;
+    border-radius: .5em;
+    box-sizing: border-box;
+    font-size: .875rem;
+}
+
+.arvue-sidebar-menu-sub-button:hover {
+    color: var(--menu-link-color-hover) !important;
+    background: var(--background-color-input-solid) !important;
+}
+
+.arvue-sidebar-menu-sub-button[data-active="true"] {
+    color: var(--menu-selected-link-color) !important;
+    background: var(--menu-selected-background-color) !important;
+}
+
+.arvue-sidebar-menu-sub-button[data-disabled="true"] {
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+.arvue-sidebar-menu-sub-button > svg {
+    width: 1rem;
+    height: 1rem;
+    flex-shrink: 0;
+}

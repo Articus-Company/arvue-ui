@@ -1,0 +1,6 @@
+.arvue-sidebar-provider {
+    display: flex;
+    min-height: calc(100svh - var(--arvue-sidebar-offset-top));
+    width: 100%;
+    box-sizing: border-box;
+}

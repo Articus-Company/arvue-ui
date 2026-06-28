@@ -1,0 +1,25 @@
+.arvue-sidebar-trigger {
+    padding: 0;
+    width: 2rem;
+    height: 2rem;
+    background: transparent !important;
+    color: var(--accent-color);
+    box-shadow: none;
+    border-radius: .5em;
+    flex-shrink: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.arvue-sidebar-trigger svg{
+    pointer-events: none;
+    flex-shrink: 0;
+}
+
+.arvue-sidebar-trigger:hover {
+    color: var(--text-color-link-hover) !important;
+    background: var(--background-color-input-solid) !important;
+    box-shadow: none;
+}
