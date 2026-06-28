@@ -1,6 +1,6 @@
 {
     "name": "arvue-ui",
-    "version": "0.10.1",
+    "version": "0.11.0",
     "repository": "Articus-Company/arvue-ui",
     "scripts": {
         "typecheck": "pnpm -r run type-check",
