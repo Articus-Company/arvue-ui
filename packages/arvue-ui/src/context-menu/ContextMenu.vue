@@ -14,8 +14,8 @@ export interface ContextMenuProps extends ContextMenuRootProps {}
 <script setup lang="ts">
 import { ContextMenuRoot, useForwardPropsEmits } from 'reka-ui'
 
-const props = defineProps<ContextMenuEmits>()
-const emits = defineEmits<ContextMenuProps>()
+const props = defineProps<ContextMenuProps>()
+const emits = defineEmits<ContextMenuEmits>()
 
 const forwarded = useForwardPropsEmits(props, emits)
 </script>
