@@ -1,0 +1,84 @@
+.arvue-progress {
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+}
+
+.arvue-progress-root {
+    background-color: var(--background-color-input);
+    position: relative;
+    height: 6px;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 9999px;
+}
+
+.arvue-progress-indicator {
+    background-color: var(--accent-color);
+    height: 100%;
+    width: 100%;
+    flex: 1;
+    border-radius: 9999px;
+}
+
+.arvue-progress-root.green .arvue-progress-indicator {
+    background-color: var(--green);
+}
+
+.arvue-progress-root.red .arvue-progress-indicator {
+    background-color: var(--red);
+}
+
+.arvue-progress-root.blue .arvue-progress-indicator {
+    background-color: var(--blue);
+}
+
+.arvue-progress-root.yellow .arvue-progress-indicator {
+    background-color: var(--yellow);
+}
+
+.arvue-progress-root.orange .arvue-progress-indicator {
+    background-color: var(--orange);
+}
+
+.arvue-progress-root.purple .arvue-progress-indicator {
+    background-color: var(--purple);
+}
+
+.arvue-progress-root.brown .arvue-progress-indicator {
+    background-color: var(--brown);
+}
+
+.arvue-progress-root.pink .arvue-progress-indicator {
+    background-color: var(--pink);
+}
+
+.arvue-progress-root.white .arvue-progress-indicator {
+    background-color: var(--white);
+}
+
+.arvue-progress-root.black .arvue-progress-indicator {
+    background-color: var(--black);
+}
+
+.arvue-progress-root.gray .arvue-progress-indicator {
+    background-color: var(--gray);
+}
+
+.arvue-progress-root.light-gray .arvue-progress-indicator {
+    background-color: var(--light-gray);
+}
+
+.arvue-progress-root.dark-gray .arvue-progress-indicator {
+    background-color: var(--dark-gray);
+}
+
+.arvue-progress-status {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: row;
+    min-width: fit-content;
+    color: var(--text-color-hint-strong);
+    font-weight: 600;
+}
