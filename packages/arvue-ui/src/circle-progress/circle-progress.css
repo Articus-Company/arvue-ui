@@ -1,0 +1,86 @@
+.arvue-circle-progress {
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
+
+.arvue-circle-progress-root {
+    width: 100%;
+    height: 100%;
+}
+
+.arvue-circle-progress-track {
+    fill: none;
+    stroke: var(--background-color-input);
+}
+
+.arvue-circle-progress-indicator {
+    fill: none;
+    stroke: var(--accent-color);
+}
+
+.arvue-circle-progress-root.green .arvue-circle-progress-indicator {
+    stroke: var(--green);
+}
+
+.arvue-circle-progress-root.red .arvue-circle-progress-indicator {
+    stroke: var(--red);
+}
+
+.arvue-circle-progress-root.blue .arvue-circle-progress-indicator {
+    stroke: var(--blue);
+}
+
+.arvue-circle-progress-root.yellow .arvue-circle-progress-indicator {
+    stroke: var(--yellow);
+}
+
+.arvue-circle-progress-root.orange .arvue-circle-progress-indicator {
+    stroke: var(--orange);
+}
+
+.arvue-circle-progress-root.purple .arvue-circle-progress-indicator {
+    stroke: var(--purple);
+}
+
+.arvue-circle-progress-root.brown .arvue-circle-progress-indicator {
+    stroke: var(--brown);
+}
+
+.arvue-circle-progress-root.pink .arvue-circle-progress-indicator {
+    stroke: var(--pink);
+}
+
+.arvue-circle-progress-root.white .arvue-circle-progress-indicator {
+    stroke: var(--white);
+}
+
+.arvue-circle-progress-root.black .arvue-circle-progress-indicator {
+    stroke: var(--black);
+}
+
+.arvue-circle-progress-root.gray .arvue-circle-progress-indicator {
+    stroke: var(--gray);
+}
+
+.arvue-circle-progress-root.light-gray .arvue-circle-progress-indicator {
+    stroke: var(--light-gray);
+}
+
+.arvue-circle-progress-root.dark-gray .arvue-circle-progress-indicator {
+    stroke: var(--dark-gray);
+}
+
+.arvue-circle-progress-status {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.arvue-circle-progress-status-text {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--text-color-hint-strong);
+}
