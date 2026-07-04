@@ -1,0 +1,8 @@
+.arvue-color-field {
+    display: contents;
+}
+
+.arvue-color-field-input[data-disabled] {
+    border-color: transparent;
+    color: var(--gray);
+}
