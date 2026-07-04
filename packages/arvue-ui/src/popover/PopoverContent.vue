@@ -3,12 +3,34 @@
 </style>
 
 <template>
-    <PopoverContent
-        v-bind="{ ...$attrs, ...forwarded }"
-        :class="clsx('arvue-popover-content', props.class)"
-    >
-        <slot/>
-    </PopoverContent>
+    <AnimatePresence>
+        <PopoverContent
+            v-bind="{ ...$attrs, ...forwarded }"
+            :class="clsx('arvue-popover-content', props.class)"
+            as-child
+        >
+            <Motion
+                :initial="{
+                    y: '-5px',
+                    opacity: 0,
+                }"
+                :animate="{
+                    y: 0,
+                    opacity: 1,
+                }"
+                :exit="{
+                    y: '-5px',
+                    opacity: 0,
+                }"
+                :transition="{
+                    duration: .15,
+                    ease: 'easeInOut',
+                }"
+            >
+                <slot/>
+            </Motion>
+        </PopoverContent>
+    </AnimatePresence>
 </template>
 
 <script lang="ts">
@@ -28,6 +50,7 @@ export interface PopoverContentEmits extends RekaPopoverContentEmits {
 <script setup lang="ts">
 import { reactiveOmit } from '@vueuse/core'
 import { clsx } from 'clsx'
+import { AnimatePresence, Motion } from 'motion-v'
 import {
     PopoverContent,
     useForwardPropsEmits,
