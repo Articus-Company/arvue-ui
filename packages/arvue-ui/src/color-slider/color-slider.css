@@ -1,0 +1,40 @@
+.arvue-color-slider {
+    position: relative;
+    display: flex;
+    align-items: center;
+    user-select: none;
+    touch-action: none;
+    width: 100%;
+    height: 1.25rem;
+}
+
+.arvue-color-slider[data-disabled] {
+    opacity: .5;
+    pointer-events: none;
+}
+
+.arvue-color-slider-track {
+    position: relative;
+    flex: 1;
+    height: 0.5rem;
+    border-radius: 9999px;
+}
+
+.arvue-color-slider-thumb {
+    display: block;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 9999px;
+    background-color: #fff;
+    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+    border: 2px solid #9ca3af;
+    transition-property: color, box-shadow;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: .15s;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.arvue-color-slider-thumb:hover {
+    box-shadow: 0 0 0 4px rgba(2, 154, 254, 0.5)
+}
