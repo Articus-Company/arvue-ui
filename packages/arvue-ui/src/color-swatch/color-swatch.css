@@ -1,0 +1,7 @@
+.arvue-color-swatch {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 0.5rem;
+    background-color: var(--reka-color-swatch-color);
+    flex-shrink: 0;
+}
