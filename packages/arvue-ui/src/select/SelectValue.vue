@@ -6,6 +6,7 @@
     <SelectValue
         v-bind="forwardedProps"
         :class="clsx('arvue-select-value', props.class)"
+        data-slot="select-value"
     >
         <slot/>
     </SelectValue>

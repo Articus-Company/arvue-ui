@@ -6,6 +6,7 @@
     <SelectSeparator
         v-bind="delegatedProps"
         :class="clsx('arvue-select-separator', props.class)"
+        data-slot="select-separator"
     />
 </template>
 

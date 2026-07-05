@@ -2,6 +2,7 @@
     <DropdownMenuSub
         v-slot="slotProps"
         v-bind="forwarded"
+        data-slot="dropdown-menu-sub"
     >
         <slot v-bind="slotProps"/>
     </DropdownMenuSub>

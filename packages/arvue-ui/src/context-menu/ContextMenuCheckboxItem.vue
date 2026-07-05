@@ -6,6 +6,7 @@
     <ContextMenuCheckboxItem
         v-bind="forwarded"
         :class="clsx('arvue-context-menu-checkbox-item', props.class)"
+        data-slot="context-menu-checkbox-item"
     >
         <span class="arvue-context-menu-checkbox-item-indicator-wrapper">
             <ContextMenuItemIndicator>

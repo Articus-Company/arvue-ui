@@ -1,5 +1,8 @@
 <template>
-    <DrawerClose v-bind="props">
+    <DrawerClose
+        v-bind="props"
+        data-slot="sheet-close"
+    >
         <slot/>
     </DrawerClose>
 </template>

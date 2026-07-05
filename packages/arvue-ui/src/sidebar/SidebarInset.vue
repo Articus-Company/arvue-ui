@@ -7,6 +7,7 @@
         data-sidebar="inset"
         :class="clsx('arvue-sidebar-inset', props.class)"
         v-bind="delegatedProps"
+        data-slot="sidebar-inset"
     >
         <slot/>
     </Primitive>

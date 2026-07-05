@@ -1,5 +1,8 @@
 <template>
-    <AutocompleteCancel v-bind="props">
+    <AutocompleteCancel
+        v-bind="props"
+        data-slot="autocomplete-cancel"
+    >
         <slot/>
     </AutocompleteCancel>
 </template>

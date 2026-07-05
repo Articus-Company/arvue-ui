@@ -2,6 +2,7 @@
     <DialogRoot
         v-slot="slotProps"
         v-bind="forwarded"
+        data-slot="drawer"
     >
         <slot v-bind="slotProps"/>
     </DialogRoot>

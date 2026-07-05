@@ -6,6 +6,7 @@
     <Primitive
         :class="clsx('arvue-drawer-header', props.class)"
         v-bind="delegatedProps"
+        data-slot="drawer-header"
     >
         <slot/>
     </Primitive>

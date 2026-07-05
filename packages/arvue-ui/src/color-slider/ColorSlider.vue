@@ -6,9 +6,16 @@
     <ColorSliderRoot
         v-bind="forwarded"
         :class="clsx('arvue-color-slider', props.class)"
+        data-slot="color-slider"
     >
-        <ColorSliderTrack class="arvue-color-slider-track"/>
-        <ColorSliderThumb class="arvue-color-slider-thumb"/>
+        <ColorSliderTrack
+            class="arvue-color-slider-track"
+            data-slot="color-slider-track"
+        />
+        <ColorSliderThumb
+            class="arvue-color-slider-thumb"
+            data-slot="color-slider-thumb"
+        />
     </ColorSliderRoot>
 </template>
 

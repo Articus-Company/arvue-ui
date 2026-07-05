@@ -1,5 +1,8 @@
 <template>
-    <PopoverAnchor v-bind="props">
+    <PopoverAnchor
+        v-bind="props"
+        data-slot="popover-anchor"
+    >
         <slot/>
     </PopoverAnchor>
 </template>

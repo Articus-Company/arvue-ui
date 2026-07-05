@@ -6,6 +6,7 @@
     <AlertDialogTitle
         :class="clsx('arvue-alert-dialog-title', props.class)"
         v-bind="delegatedProps"
+        data-slot="alert-dialog-title"
     >
         <slot/>
     </AlertDialogTitle>

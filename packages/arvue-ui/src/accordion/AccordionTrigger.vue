@@ -7,6 +7,7 @@
         <AccordionTrigger
             v-bind="{ ...$attrs, ...delegatedProps }"
             :class="clsx('arvue-accordion-trigger', props.class)"
+            data-slot="accordion-trigger"
         >
             <slot/>
             <i class="fas fa-chevron-down arvue-accordion-trigger-icon"/>

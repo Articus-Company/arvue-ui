@@ -6,6 +6,7 @@
     <Primitive
         :class="clsx('arvue-alert-dialog-header', props.class)"
         v-bind="delegatedProps"
+        data-slot="alert-dialog-header"
     >
         <slot/>
     </Primitive>

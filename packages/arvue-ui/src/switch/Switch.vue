@@ -8,6 +8,7 @@
         v-bind="forwarded"
         :class="clsx('arvue-switch', props.class)"
         :data-size="size"
+        data-slot="switch"
     >
         <SwitchThumb :class="clsx('arvue-switch-thumb', props.class)">
             <slot

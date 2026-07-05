@@ -7,6 +7,7 @@
         data-sidebar="footer"
         :class="clsx('arvue-sidebar-footer', props.class)"
         v-bind="delegatedProps"
+        data-slot="sidebar-footer"
     >
         <slot/>
     </Primitive>

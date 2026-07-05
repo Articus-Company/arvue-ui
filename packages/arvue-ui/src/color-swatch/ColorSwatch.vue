@@ -7,6 +7,7 @@
         v-slot="slotProps"
         v-bind="delegatedProps"
         :class="clsx('arvue-color-swatch', props.class)"
+        data-slot="color-swatch"
     >
         <slot v-bind="slotProps"/>
     </ColorSwatch>

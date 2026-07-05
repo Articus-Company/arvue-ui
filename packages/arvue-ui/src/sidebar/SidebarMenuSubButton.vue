@@ -10,6 +10,7 @@
         :data-disabled="disabled"
         :class="clsx('arvue-sidebar-menu-sub-button', props.class)"
         v-bind="delegatedProps"
+        data-slot="sidebar-menu-sub-button"
     >
         <slot/>
     </Primitive>

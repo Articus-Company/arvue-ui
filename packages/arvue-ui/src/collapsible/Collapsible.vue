@@ -2,6 +2,7 @@
     <CollapsibleRoot
         v-slot="slotProps"
         v-bind="forwarded"
+        data-slot="collapsible"
     >
         <slot v-bind="slotProps"/>
     </CollapsibleRoot>

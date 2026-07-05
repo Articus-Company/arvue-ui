@@ -6,6 +6,7 @@
     <AccordionHeader
         :class="clsx('arvue-accordion-header', props.class)"
         v-bind="delegatedProps"
+        data-slot="accordion-header"
     >
         <slot/>
     </AccordionHeader>

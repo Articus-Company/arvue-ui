@@ -1,5 +1,8 @@
 <template>
-    <ComboboxGroup v-bind="props">
+    <ComboboxGroup
+        v-bind="props"
+        data-slot="combobox-group"
+    >
         <slot/>
     </ComboboxGroup>
 </template>

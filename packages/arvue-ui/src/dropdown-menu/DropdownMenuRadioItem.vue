@@ -6,6 +6,7 @@
     <DropdownMenuRadioItem
         v-bind="forwarded"
         :class="clsx('arvue-dropdown-menu-radio-item', props.class)"
+        data-slot="dropdown-menu-radio-item"
     >
         <span class="arvue-dropdown-menu-radio-item-indicator-wrapper">
             <DropdownMenuItemIndicator>

@@ -1,5 +1,8 @@
 <template>
-    <ComboboxCancel v-bind="props">
+    <ComboboxCancel
+        v-bind="props"
+        data-slot="combobox-cancel"
+    >
         <slot/>
     </ComboboxCancel>
 </template>

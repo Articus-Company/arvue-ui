@@ -1,5 +1,8 @@
 <template>
-    <ComboboxViewport v-bind="props">
+    <ComboboxViewport
+        v-bind="props"
+        data-slot="combobox-viewport"
+    >
         <slot/>
     </ComboboxViewport>
 </template>

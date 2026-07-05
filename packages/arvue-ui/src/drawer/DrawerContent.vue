@@ -26,6 +26,7 @@
                     props.class,
                 )"
                 v-bind="{ ...$attrs, ...forwarded }"
+                data-slot="drawer-content"
                 as-child
             >
                 <Motion

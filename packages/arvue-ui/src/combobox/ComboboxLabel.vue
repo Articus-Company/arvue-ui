@@ -6,6 +6,7 @@
     <ComboboxLabel
         v-bind="delegatedProps"
         :class="clsx('arvue-combobox-label', props.class)"
+        data-slot="combobox-label"
     >
         <slot/>
     </ComboboxLabel>

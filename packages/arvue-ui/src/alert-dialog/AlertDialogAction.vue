@@ -1,5 +1,8 @@
 <template>
-    <AlertDialogAction v-bind="forwarded">
+    <AlertDialogAction
+        v-bind="forwarded"
+        data-slot="alert-dialog-action"
+    >
         <slot/>
     </AlertDialogAction>
 </template>

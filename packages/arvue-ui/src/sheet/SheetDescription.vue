@@ -6,6 +6,7 @@
     <DrawerDescription
         :class="clsx('arvue-sheet-description', props.class)"
         v-bind="delegatedProps"
+        data-slot="sheet-description"
     >
         <slot/>
     </DrawerDescription>

@@ -6,6 +6,7 @@
     <Primitive
         :class="clsx('arvue-dropdown-menu-shortcut', props.class)"
         v-bind="delegatedProps"
+        data-slot="dropdown-menu-shortcut"
     >
         <slot/>
     </Primitive>

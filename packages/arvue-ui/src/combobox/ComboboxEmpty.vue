@@ -6,6 +6,7 @@
     <ComboboxEmpty
         v-bind="delegatedProps"
         :class="clsx('arvue-combobox-empty', props.class)"
+        data-slot="combobox-empty"
     >
         <slot/>
     </ComboboxEmpty>

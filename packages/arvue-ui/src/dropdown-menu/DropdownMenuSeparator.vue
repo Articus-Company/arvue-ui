@@ -6,6 +6,7 @@
     <DropdownMenuSeparator
         v-bind="delegatedProps"
         :class="clsx('arvue-dropdown-menu-separator', props.class)"
+        data-slot="dropdown-menu-separator"
     />
 </template>
 

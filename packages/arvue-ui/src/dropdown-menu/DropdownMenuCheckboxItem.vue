@@ -6,6 +6,7 @@
     <DropdownMenuCheckboxItem
         v-bind="forwarded"
         :class="clsx('arvue-dropdown-menu-checkbox-item', props.class)"
+        data-slot="dropdown-menu-checkbox-item"
     >
         <span class="arvue-dropdown-menu-checkbox-item-indicator-wrapper">
             <DropdownMenuItemIndicator>

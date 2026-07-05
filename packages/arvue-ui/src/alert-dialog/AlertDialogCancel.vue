@@ -1,5 +1,8 @@
 <template>
-    <AlertDialogCancel v-bind="forwarded">
+    <AlertDialogCancel
+        v-bind="forwarded"
+        data-slot="alert-dialog-cancel"
+    >
         <slot/>
     </AlertDialogCancel>
 </template>

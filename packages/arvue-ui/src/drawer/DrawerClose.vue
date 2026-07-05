@@ -1,5 +1,8 @@
 <template>
-    <DialogClose v-bind="props">
+    <DialogClose
+        v-bind="props"
+        data-slot="drawer-close"
+    >
         <slot/>
     </DialogClose>
 </template>

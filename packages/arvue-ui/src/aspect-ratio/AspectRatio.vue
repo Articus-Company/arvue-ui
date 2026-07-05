@@ -2,6 +2,7 @@
     <AspectRatio
         v-slot="slotProps"
         v-bind="props"
+        data-slot="aspect-ratio"
     >
         <slot v-bind="slotProps"/>
     </AspectRatio>

@@ -2,6 +2,7 @@
     <AlertDialogRoot
         v-slot="slotProps"
         v-bind="forwarded"
+        data-slot="alert-dialog"
     >
         <slot v-bind="slotProps"/>
     </AlertDialogRoot>

@@ -1,5 +1,8 @@
 <template>
-    <AutocompleteAnchor v-bind="props">
+    <AutocompleteAnchor
+        v-bind="props"
+        data-slot="autocomplete-anchor"
+    >
         <slot/>
     </AutocompleteAnchor>
 </template>

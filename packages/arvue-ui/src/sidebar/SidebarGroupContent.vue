@@ -7,6 +7,7 @@
         data-sidebar="group-content"
         :class="clsx('arvue-sidebar-group-content', props.class)"
         v-bind="delegatedProps"
+        data-slot="sidebar-group-content"
     >
         <slot/>
     </Primitive>

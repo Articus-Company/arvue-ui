@@ -7,6 +7,7 @@
         <AnimatePresence as="div">
             <AlertDialogOverlay
                 class="arvue-alert-dialog-overlay"
+                data-slot="alert-dialog-overlay"
                 as-child
             >
                 <Motion
@@ -22,6 +23,7 @@
             <AlertDialogContent
                 v-bind="{ ...$attrs, ...forwarded }"
                 :class="clsx('arvue-alert-dialog-content', props.class)"
+                data-slot="alert-dialog-content"
                 as-child
             >
                 <Motion

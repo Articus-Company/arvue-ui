@@ -6,6 +6,7 @@
     <ContextMenuSeparator
         v-bind="delegatedProps"
         :class="clsx('arvue-context-menu-separator', props.class)"
+        data-slot="context-menu-separator"
     />
 </template>
 

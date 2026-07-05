@@ -7,6 +7,7 @@
         data-sidebar="menu-item"
         :class="clsx('arvue-sidebar-menu-item', props.class)"
         v-bind="delegatedProps"
+        data-slot="sidebar-menu-item"
     >
         <slot/>
     </Primitive>

@@ -1,5 +1,8 @@
 <template>
-    <SelectGroup v-bind="props">
+    <SelectGroup
+        v-bind="props"
+        data-slot="select-group"
+    >
         <slot/>
     </SelectGroup>
 </template>

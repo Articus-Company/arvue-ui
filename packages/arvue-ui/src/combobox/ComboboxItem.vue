@@ -6,6 +6,7 @@
     <ComboboxItem
         v-bind="forwarded"
         :class="clsx('arvue-combobox-item', props.class)"
+        data-slot="combobox-item"
     >
         <slot/>
     </ComboboxItem>

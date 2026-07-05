@@ -1,5 +1,8 @@
 <template>
-    <AutocompleteViewport v-bind="props">
+    <AutocompleteViewport
+        v-bind="props"
+        data-slot="autocomplete-viewport"
+    >
         <slot/>
     </AutocompleteViewport>
 </template>

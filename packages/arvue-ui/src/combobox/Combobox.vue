@@ -7,6 +7,7 @@
         v-slot="slotProps"
         v-bind="forwarded"
         :class="clsx('arvue-combobox', props.class)"
+        data-slot="combobox"
     >
         <slot v-bind="slotProps"/>
     </ComboboxRoot>

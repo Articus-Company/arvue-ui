@@ -1,5 +1,8 @@
 <template>
-    <ComboboxTrigger v-bind="props">
+    <ComboboxTrigger
+        v-bind="props"
+        data-slot="combobox-trigger"
+    >
         <slot/>
     </ComboboxTrigger>
 </template>

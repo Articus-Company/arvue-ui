@@ -6,6 +6,7 @@
     <DialogDescription
         :class="clsx('arvue-drawer-description', props.class)"
         v-bind="delegatedProps"
+        data-slot="drawer-description"
     >
         <slot/>
     </DialogDescription>

@@ -6,6 +6,7 @@
     <ComboboxSeparator
         v-bind="delegatedProps"
         :class="clsx('arvue-combobox-separator', props.class)"
+        data-slot="combobox-separator"
     >
         <slot/>
     </ComboboxSeparator>

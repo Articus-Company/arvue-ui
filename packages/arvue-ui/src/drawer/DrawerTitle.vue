@@ -6,6 +6,7 @@
     <DialogTitle
         :class="clsx('arvue-drawer-title', props.class)"
         v-bind="delegatedProps"
+        data-slot="drawer-title"
     >
         <slot/>
     </DialogTitle>

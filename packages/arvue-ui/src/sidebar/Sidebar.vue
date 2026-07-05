@@ -7,6 +7,7 @@
         v-if="collapsible === 'none'"
         :class="clsx('arvue-sidebar', props.class)"
         v-bind="$attrs"
+        data-slot="sidebar"
     >
         <slot/>
     </div>
@@ -20,6 +21,7 @@
         <DrawerContent
             data-sidebar="sidebar"
             data-mobile="true"
+            data-slot="sidebar"
             class="arvue-sidebar-mobile"
             :side="side"
             :style="{
@@ -40,6 +42,7 @@
         :data-collapsible="state === 'collapsed' ? collapsible : ''"
         :data-variant="variant"
         :data-side="side"
+        data-slot="sidebar"
     >
         <Motion
             class="arvue-sidebar-gap"

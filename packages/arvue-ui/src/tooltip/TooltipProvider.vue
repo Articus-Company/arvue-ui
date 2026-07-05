@@ -1,5 +1,8 @@
 <template>
-    <TooltipProvider v-bind="props">
+    <TooltipProvider
+        v-bind="props"
+        data-slot="tooltip-provider"
+    >
         <slot/>
     </TooltipProvider>
 </template>

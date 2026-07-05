@@ -6,6 +6,7 @@
     <AutocompleteItem
         v-bind="forwarded"
         :class="clsx('arvue-autocomplete-item', props.class)"
+        data-slot="autocomplete-item"
     >
         <slot/>
     </AutocompleteItem>

@@ -6,6 +6,7 @@
     <ContextMenuRadioItem
         v-bind="forwarded"
         :class="clsx('arvue-context-menu-radio-item', props.class)"
+        data-slot="context-menu-radio-item"
     >
         <span class="arvue-context-menu-radio-item-indicator-wrapper">
             <ContextMenuItemIndicator>
