@@ -2,6 +2,7 @@
     <PopoverRoot
         v-slot="slotProps"
         v-bind="forwarded"
+        data-slot="popover"
     >
         <slot v-bind="slotProps"/>
     </PopoverRoot>

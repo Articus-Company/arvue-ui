@@ -19,6 +19,7 @@
             <DialogContent
                 v-bind="{ ...$attrs, ...forwarded }"
                 :class="clsx('arvue-dialog-content', props.class)"
+                data-slot="dialog-content"
                 as-child
             >
                 <Motion

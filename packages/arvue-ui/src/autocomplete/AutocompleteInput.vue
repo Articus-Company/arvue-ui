@@ -3,7 +3,10 @@
 </style>
 
 <template>
-    <div class="arvue-autocomplete-input-wrapper">
+    <div
+        class="arvue-autocomplete-input-wrapper"
+        data-slot="autocomplete-input-wrapper"
+    >
         <AutocompleteAnchor
             :class="{ 'state-with-inner-icon right': showTriggerButton }"
             :reference="inputRef?.$el"
@@ -11,6 +14,7 @@
             <AutocompleteInput
                 v-bind="{ ...$attrs, ...forwarded }"
                 ref="inputRef"
+                data-slot="autocomplete-input"
             />
             <AutocompleteTrigger
                 v-if="showTriggerButton"

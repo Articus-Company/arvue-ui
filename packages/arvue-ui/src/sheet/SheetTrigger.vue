@@ -1,5 +1,8 @@
 <template>
-    <DrawerTrigger v-bind="props">
+    <DrawerTrigger
+        v-bind="props"
+        data-slot="sheet-trigger"
+    >
         <slot/>
     </DrawerTrigger>
 </template>

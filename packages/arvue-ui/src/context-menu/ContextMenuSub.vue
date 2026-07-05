@@ -2,6 +2,7 @@
     <ContextMenuSub
         v-slot="slotProps"
         v-bind="forwarded"
+        data-slot="context-menu-sub"
     >
         <slot v-bind="slotProps"/>
     </ContextMenuSub>

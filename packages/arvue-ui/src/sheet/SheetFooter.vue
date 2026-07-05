@@ -6,6 +6,7 @@
     <Primitive
         :class="clsx('arvue-sheet-footer', props.class)"
         v-bind="delegatedProps"
+        data-slot="sheet-footer"
     >
         <slot/>
     </Primitive>

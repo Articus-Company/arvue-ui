@@ -7,6 +7,7 @@
         <TooltipContent
             v-bind="{ ...forwarded, ...$attrs }"
             :class="clsx('arvue-tooltip-content', props.class)"
+            data-slot="tooltip-content"
             as-child
         >
             <Motion

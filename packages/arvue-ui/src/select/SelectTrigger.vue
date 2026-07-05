@@ -7,10 +7,14 @@
         v-bind="forwardedProps"
         :class="clsx('arvue-select-trigger', props.class)"
         :tabindex="disabled ? -1 : 0"
+        data-slot="select-trigger"
     >
         <slot/>
         <SelectIcon as-child>
-            <span class="arvue-select-trigger-icon">
+            <span
+                class="arvue-select-trigger-icon"
+                data-slot="select-trigger-icon"
+            >
                 <i class="fas fa-chevron-down"/>
             </span>
         </SelectIcon>

@@ -8,6 +8,7 @@
         role="button"
         :class="clsx('arvue-sidebar-menu-action', props.class)"
         v-bind="delegatedProps"
+        data-slot="sidebar-menu-action"
     >
         <slot/>
     </Primitive>

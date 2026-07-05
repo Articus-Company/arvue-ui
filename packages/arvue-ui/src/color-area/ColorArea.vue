@@ -7,10 +7,12 @@
         v-slot="{ style }"
         v-bind="forwarded"
         class="arvue-color-area-root"
+        data-slot="color-area"
     >
         <ColorAreaArea
             :class="clsx('arvue-color-area', props.class)"
             :style="style"
+            data-slot="color-area-area"
         >
             <ColorAreaThumb class="arvue-color-area-thumb"/>
         </ColorAreaArea>

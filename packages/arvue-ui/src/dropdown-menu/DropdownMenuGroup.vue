@@ -1,5 +1,8 @@
 <template>
-    <DropdownMenuGroup v-bind="props">
+    <DropdownMenuGroup
+        v-bind="props"
+        data-slot="dropdown-menu-group"
+    >
         <slot/>
     </DropdownMenuGroup>
 </template>

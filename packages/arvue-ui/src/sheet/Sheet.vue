@@ -2,6 +2,7 @@
     <DrawerRoot
         v-slot="slotProps"
         v-bind="forwarded"
+        data-slot="sheet"
     >
         <slot v-bind="slotProps"/>
     </DrawerRoot>

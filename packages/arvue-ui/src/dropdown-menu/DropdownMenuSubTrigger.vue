@@ -10,6 +10,7 @@
             inset && 'arvue-dropdown-menu-sub-trigger-inset',
             props.class,
         )"
+        data-slot="dropdown-menu-sub-trigger"
     >
         <slot/>
         <i class="fas fa-chevron-right arvue-dropdown-menu-sub-trigger-icon"/>

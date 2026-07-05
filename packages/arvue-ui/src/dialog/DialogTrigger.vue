@@ -1,5 +1,8 @@
 <template>
-    <DialogTrigger v-bind="props">
+    <DialogTrigger
+        v-bind="props"
+        data-slot="dialog-trigger"
+    >
         <slot/>
     </DialogTrigger>
 </template>

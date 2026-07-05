@@ -6,6 +6,7 @@
     <AutocompleteSeparator
         v-bind="delegatedProps"
         :class="clsx('arvue-autocomplete-separator', props.class)"
+        data-slot="autocomplete-separator"
     >
         <slot/>
     </AutocompleteSeparator>

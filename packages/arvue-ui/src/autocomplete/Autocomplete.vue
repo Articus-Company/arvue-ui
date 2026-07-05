@@ -7,6 +7,7 @@
         v-slot="slotProps"
         v-bind="forwarded"
         :class="clsx('arvue-autocomplete', props.class)"
+        data-slot="autocomplete"
     >
         <slot v-bind="slotProps"/>
     </AutocompleteRoot>

@@ -7,6 +7,7 @@
         data-sidebar="separator"
         :class="clsx('arvue-sidebar-separator', props.class)"
         v-bind="delegatedProps"
+        data-slot="sidebar-separator"
     >
         <slot/>
     </Primitive>

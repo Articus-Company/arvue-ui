@@ -6,6 +6,7 @@
     <AutocompleteLabel
         v-bind="delegatedProps"
         :class="clsx('arvue-autocomplete-label', props.class)"
+        data-slot="autocomplete-label"
     >
         <slot/>
     </AutocompleteLabel>

@@ -6,6 +6,7 @@
     <Primitive
         :class="clsx('arvue-context-menu-shortcut', props.class)"
         v-bind="delegatedProps"
+        data-slot="context-menu-shortcut"
     >
         <slot/>
     </Primitive>

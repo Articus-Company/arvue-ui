@@ -1,5 +1,8 @@
 <template>
-    <ContextMenuRadioGroup v-bind="forwarded">
+    <ContextMenuRadioGroup
+        v-bind="forwarded"
+        data-slot="context-menu-radio-group"
+    >
         <slot/>
     </ContextMenuRadioGroup>
 </template>

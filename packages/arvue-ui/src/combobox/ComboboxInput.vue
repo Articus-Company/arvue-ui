@@ -3,7 +3,10 @@
 </style>
 
 <template>
-    <div class="arvue-combobox-input-wrapper">
+    <div
+        class="arvue-combobox-input-wrapper"
+        data-slot="combobox-input-wrapper"
+    >
         <ComboboxAnchor
             :class="{ 'state-with-inner-icon right': showTriggerButton }"
             :reference="inputRef?.$el"
@@ -11,6 +14,7 @@
             <ComboboxInput
                 v-bind="{ ...$attrs, ...forwarded }"
                 ref="inputRef"
+                data-slot="combobox-input"
             />
             <ComboboxTrigger
                 v-if="showTriggerButton"

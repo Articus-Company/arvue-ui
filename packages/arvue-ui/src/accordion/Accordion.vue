@@ -2,6 +2,7 @@
     <AccordionRoot
         v-slot="slotProps"
         v-bind="forwarded"
+        data-slot="accordion"
     >
         <slot v-bind="slotProps"/>
     </AccordionRoot>

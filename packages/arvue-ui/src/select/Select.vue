@@ -2,6 +2,7 @@
     <SelectRoot
         v-slot="slotProps"
         v-bind="forwarded"
+        data-slot="select"
     >
         <SelectRootPatch>
             <slot v-bind="slotProps"/>

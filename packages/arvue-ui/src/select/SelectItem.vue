@@ -6,6 +6,7 @@
     <SelectItem
         v-bind="forwardedProps"
         :class="clsx('arvue-select-item', props.class)"
+        data-slot="select-item"
     >
         <span class="arvue-select-item-indicator-wrapper">
             <SelectItemIndicator>

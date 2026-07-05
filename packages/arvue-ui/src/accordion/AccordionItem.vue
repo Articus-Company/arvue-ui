@@ -7,6 +7,7 @@
         v-slot="slotProps"
         v-bind="forwardedProps"
         :class="clsx('arvue-accordion-item', props.class)"
+        data-slot="accordion-item"
     >
         <slot v-bind="slotProps"/>
     </AccordionItem>

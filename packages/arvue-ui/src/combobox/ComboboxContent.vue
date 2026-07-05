@@ -7,6 +7,7 @@
         <ComboboxContent
             v-bind="{ ...$attrs, ...forwarded }"
             :class="clsx('arvue-combobox-content', props.class)"
+            data-slot="combobox-content"
             position="popper"
             as-child
         >

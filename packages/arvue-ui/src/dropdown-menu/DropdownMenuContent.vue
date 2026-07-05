@@ -7,6 +7,7 @@
         <DropdownMenuContent
             v-bind="{ ...$attrs, ...forwarded }"
             :class="clsx('arvue-dropdown-menu-content', props.class)"
+            data-slot="dropdown-menu-content"
             as-child
         >
             <Motion

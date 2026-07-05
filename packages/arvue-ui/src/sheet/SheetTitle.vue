@@ -6,6 +6,7 @@
     <DrawerTitle
         :class="clsx('arvue-sheet-title', props.class)"
         v-bind="delegatedProps"
+        data-slot="sheet-title"
     >
         <slot/>
     </DrawerTitle>

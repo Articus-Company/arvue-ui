@@ -6,6 +6,7 @@
     <DrawerOverlay
         :class="clsx('arvue-sheet-overlay', props.class)"
         v-bind="delegatedProps"
+        data-slot="sheet-overlay"
     >
         <slot/>
     </DrawerOverlay>

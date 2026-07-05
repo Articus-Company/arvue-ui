@@ -12,6 +12,7 @@
             }"
             :class="clsx('arvue-sidebar-provider', props.class)"
             v-bind="$attrs"
+            data-slot="sidebar-wrapper"
         >
             <slot/>
         </div>

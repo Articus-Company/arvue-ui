@@ -1,5 +1,8 @@
 <template>
-    <ContextMenuTrigger v-bind="forwardedProps">
+    <ContextMenuTrigger
+        v-bind="forwardedProps"
+        data-slot="context-menu-trigger"
+    >
         <slot/>
     </ContextMenuTrigger>
 </template>

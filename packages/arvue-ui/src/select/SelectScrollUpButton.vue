@@ -6,6 +6,7 @@
     <SelectScrollUpButton
         v-bind="forwardedProps"
         :class="clsx('arvue-select-scroll-button', props.class)"
+        data-slot="select-scroll-up-button"
     >
         <i class="fas fa-chevron-up"/>
     </SelectScrollUpButton>

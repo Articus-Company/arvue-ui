@@ -7,6 +7,7 @@
         <PopoverContent
             v-bind="{ ...$attrs, ...forwarded }"
             :class="clsx('arvue-popover-content', props.class)"
+            data-slot="popover-content"
             as-child
         >
             <Motion

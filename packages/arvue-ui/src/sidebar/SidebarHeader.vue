@@ -7,6 +7,7 @@
         data-sidebar="header"
         :class="clsx('arvue-sidebar-header', props.class)"
         v-bind="delegatedProps"
+        data-slot="sidebar-header"
     >
         <slot/>
     </Primitive>

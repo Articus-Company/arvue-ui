@@ -6,8 +6,12 @@
     <ColorFieldRoot
         v-bind="forwarded"
         class="arvue-color-field"
+        data-slot="color-field"
     >
-        <ColorFieldInput :class="clsx('arvue-color-field-input', props.class)"/>
+        <ColorFieldInput
+            :class="clsx('arvue-color-field-input', props.class)"
+            data-slot="color-field-input"
+        />
     </ColorFieldRoot>
 </template>
 

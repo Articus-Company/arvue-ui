@@ -10,6 +10,7 @@
             inset && 'arvue-dropdown-menu-label-inset',
             props.class,
         )"
+        data-slot="dropdown-menu-label"
     >
         <slot/>
     </DropdownMenuLabel>

@@ -8,6 +8,7 @@
         :class="clsx('arvue-sidebar-trigger', props.class)"
         role="button"
         v-bind="delegatedProps"
+        data-slot="sidebar-trigger"
         @click="toggleSidebar"
     >
         <slot>

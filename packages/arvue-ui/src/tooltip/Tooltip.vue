@@ -2,6 +2,7 @@
     <TooltipRoot
         v-slot="slotProps"
         v-bind="forwarded"
+        data-slot="tooltip"
     >
         <slot v-bind="slotProps"/>
     </TooltipRoot>

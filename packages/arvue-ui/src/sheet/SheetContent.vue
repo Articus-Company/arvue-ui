@@ -8,10 +8,12 @@
         <DrawerContent
             :class="clsx('arvue-sheet-content', props.class)"
             v-bind="{ ...$attrs, ...forwarded }"
+            data-slot="sheet-content"
         >
             <div
                 v-if="showHandle"
                 class="arvue-sheet-handle"
+                data-slot="sheet-handle"
             />
             <slot/>
         </DrawerContent>

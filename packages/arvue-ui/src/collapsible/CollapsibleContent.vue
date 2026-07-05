@@ -1,5 +1,8 @@
 <template>
-    <CollapsibleContent v-bind="props">
+    <CollapsibleContent
+        v-bind="props"
+        data-slot="collapsible-content"
+    >
         <slot/>
     </CollapsibleContent>
 </template>

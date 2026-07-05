@@ -7,6 +7,7 @@
         <AutocompleteContent
             v-bind="{ ...$attrs, ...forwarded }"
             :class="clsx('arvue-autocomplete-content', props.class)"
+            data-slot="autocomplete-content"
             position="popper"
             as-child
         >

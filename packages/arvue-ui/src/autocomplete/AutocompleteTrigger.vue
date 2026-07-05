@@ -1,5 +1,8 @@
 <template>
-    <AutocompleteTrigger v-bind="props">
+    <AutocompleteTrigger
+        v-bind="props"
+        data-slot="autocomplete-trigger"
+    >
         <slot/>
     </AutocompleteTrigger>
 </template>

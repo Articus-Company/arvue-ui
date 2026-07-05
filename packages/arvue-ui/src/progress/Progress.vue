@@ -3,10 +3,14 @@
 </style>
 
 <template>
-    <div class="arvue-progress">
+    <div
+        class="arvue-progress"
+        data-slot="progress-wrapper"
+    >
         <Motion
             v-if="status && !isIndeterminate"
             class="arvue-progress-status"
+            data-slot="progress-status"
             :initial="{ width: '0%' }"
             :animate="{ width: `${percentage}%` }"
             :transition="{ duration: 0.6, ease: 'easeOut' }"
@@ -22,9 +26,11 @@
                 color && color,
                 props.class,
             )"
+            data-slot="progress"
         >
             <ProgressIndicator
                 class="arvue-progress-indicator"
+                data-slot="progress-indicator"
                 as-child
             >
                 <Motion

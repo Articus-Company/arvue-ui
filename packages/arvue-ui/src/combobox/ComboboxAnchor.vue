@@ -1,5 +1,8 @@
 <template>
-    <ComboboxAnchor v-bind="props">
+    <ComboboxAnchor
+        v-bind="props"
+        data-slot="combobox-anchor"
+    >
         <slot/>
     </ComboboxAnchor>
 </template>

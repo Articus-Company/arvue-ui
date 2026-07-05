@@ -1,5 +1,8 @@
 <template>
-    <AutocompleteGroup v-bind="props">
+    <AutocompleteGroup
+        v-bind="props"
+        data-slot="autocomplete-group"
+    >
         <slot/>
     </AutocompleteGroup>
 </template>

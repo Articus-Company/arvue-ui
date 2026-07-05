@@ -3,7 +3,10 @@
 </style>
 
 <template>
-    <div class="arvue-circle-progress">
+    <div
+        class="arvue-circle-progress"
+        data-slot="circle-progress-wrapper"
+    >
         <ProgressRoot
             :class="clsx(
                 'arvue-circle-progress-root',
@@ -11,6 +14,7 @@
                 props.class,
             )"
             v-bind="{ ...forwarded, ...$attrs }"
+            data-slot="circle-progress"
             as-child
         >
             <Motion
@@ -31,6 +35,7 @@
                         as="path"
                         :d="trackPath"
                         class="arvue-circle-progress-indicator"
+                        data-slot="circle-progress-indicator"
                         :style="{
                             strokeLinecap: 'round',
                             strokeWidth: width,
@@ -44,8 +49,12 @@
             <div
                 v-if="status && !isIndeterminate"
                 class="arvue-circle-progress-status"
+                data-slot="circle-progress-status"
             >
-                <span class="arvue-circle-progress-status-text">
+                <span
+                    class="arvue-circle-progress-status-text"
+                    data-slot="circle-progress-status-text"
+                >
                     <slot>
                         {{ statusText }}
                     </slot>

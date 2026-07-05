@@ -7,6 +7,7 @@
         <ContextMenuContent
             v-bind="{ ...$attrs, ...forwarded }"
             :class="clsx('arvue-context-menu-content', props.class)"
+            data-slot="context-menu-content"
             as-child
         >
             <Motion

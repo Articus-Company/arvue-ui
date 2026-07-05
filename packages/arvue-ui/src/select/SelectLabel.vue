@@ -6,6 +6,7 @@
     <SelectLabel
         :class="clsx('arvue-select-label', props.class)"
         v-bind="delegatedProps"
+        data-slot="select-label"
     >
         <slot/>
     </SelectLabel>

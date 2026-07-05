@@ -7,6 +7,7 @@
         <SelectContent
             v-bind="{ ...$attrs, ...forwarded }"
             :class="clsx('arvue-select-content', props.class)"
+            data-slot="select-content"
             position="popper"
             as-child
         >

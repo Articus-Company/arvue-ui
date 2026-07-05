@@ -1,5 +1,8 @@
 <template>
-    <DropdownMenuRadioGroup v-bind="forwarded">
+    <DropdownMenuRadioGroup
+        v-bind="forwarded"
+        data-slot="dropdown-menu-radio-group"
+    >
         <slot/>
     </DropdownMenuRadioGroup>
 </template>

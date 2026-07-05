@@ -6,6 +6,7 @@
     <AccordionContent
         v-bind="delegatedProps"
         class="arvue-accordion-content"
+        data-slot="accordion-content"
     >
         <div :class="clsx('arvue-accordion-content-block', props.class)">
             <slot/>

@@ -10,6 +10,7 @@
             inset && 'arvue-context-menu-item-inset',
             props.class,
         )"
+        data-slot="context-menu-item"
     >
         <slot/>
     </ContextMenuItem>

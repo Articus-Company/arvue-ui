@@ -10,6 +10,7 @@
             inset && 'arvue-context-menu-sub-trigger-inset',
             props.class,
         )"
+        data-slot="context-menu-sub-trigger"
     >
         <slot/>
         <i class="fas fa-chevron-right arvue-context-menu-sub-trigger-icon"/>

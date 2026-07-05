@@ -6,6 +6,7 @@
     <AutocompleteEmpty
         v-bind="delegatedProps"
         :class="clsx('arvue-autocomplete-empty', props.class)"
+        data-slot="autocomplete-empty"
     >
         <slot/>
     </AutocompleteEmpty>

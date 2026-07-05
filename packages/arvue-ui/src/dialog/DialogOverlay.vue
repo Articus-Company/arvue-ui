@@ -6,6 +6,7 @@
     <DialogOverlay
         v-bind="delegatedProps"
         :class="clsx('arvue-dialog-overlay', props.class)"
+        data-slot="dialog-overlay"
     >
         <slot/>
     </DialogOverlay>

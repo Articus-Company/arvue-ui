@@ -7,15 +7,23 @@
         v-slot="{ modelValue }"
         :class="clsx('arvue-slider', props.class)"
         v-bind="forwarded"
+        data-slot="slider"
     >
-        <SliderTrack class="arvue-slider-track">
-            <SliderRange class="arvue-slider-range"/>
+        <SliderTrack
+            class="arvue-slider-track"
+            data-slot="slider-track"
+        >
+            <SliderRange
+                class="arvue-slider-range"
+                data-slot="slider-range"
+            />
         </SliderTrack>
 
         <SliderThumb
             v-for="(_, key) in modelValue"
             :key="key"
             class="arvue-slider-thumb"
+            data-slot="slider-thumb"
         />
     </SliderRoot>
 </template>
