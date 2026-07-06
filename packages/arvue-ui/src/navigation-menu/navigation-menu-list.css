@@ -1,0 +1,11 @@
+.arvue-navigation-menu-list {
+    display: flex;
+    flex: 1;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    gap: .25rem;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}

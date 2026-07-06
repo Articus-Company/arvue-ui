@@ -1,0 +1,44 @@
+.arvue-navigation-menu-trigger {
+    display: inline-flex;
+    width: max-content;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    color: var(--menu-link-color);
+    background-color: transparent;
+    padding: .4375rem .75rem;
+    border: .125em solid transparent;
+    line-height: 1;
+    border-radius: .5em;
+    gap: 0.25rem;
+    flex-direction: row;
+}
+
+.arvue-navigation-menu-trigger[data-disabled] {
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+.arvue-navigation-menu-trigger[data-state="open"],
+.arvue-navigation-menu-trigger:focus,
+.arvue-navigation-menu-trigger:hover,
+.arvue-navigation-menu-trigger[data-state="open"]:hover,
+.arvue-navigation-menu-trigger[data-state="open"]:focus,
+.arvue-navigation-menu-trigger:focus-visible {
+    background: var(--background-color-input-solid);
+    color: var(--menu-link-color-hover);
+}
+
+.arvue-navigation-menu-trigger-icon {
+    pointer-events: none;
+    width: 1rem;
+    height: 1rem;
+    flex-shrink: 0;
+    transform: translateY(0.125rem);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 300ms;
+}
+
+.arvue-navigation-menu-trigger[data-state="open"] .arvue-navigation-menu-trigger-icon {
+    transform: rotate(180deg) translateY(-0.125rem);
+}
