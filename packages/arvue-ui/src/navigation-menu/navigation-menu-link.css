@@ -1,0 +1,22 @@
+.arvue-navigation-menu-link {
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+    border-radius: .5em;
+    padding: .375rem .625rem;
+    color: var(--menu-link-color);
+}
+
+.arvue-navigation-menu-link[data-disabled] {
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+.arvue-navigation-menu-link:hover,
+.arvue-navigation-menu-link:focus,
+.arvue-navigation-menu-link[data-active="true"],
+.arvue-navigation-menu-link[data-active="true"]:hover,
+.arvue-navigation-menu-link[data-active="true"]:focus {
+    color: var(--menu-link-color-hover);
+    background: var(--background-color-input-solid);
+}
