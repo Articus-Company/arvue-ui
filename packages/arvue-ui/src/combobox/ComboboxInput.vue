@@ -12,9 +12,10 @@
             :reference="inputRef?.$el"
         >
             <ComboboxInput
-                v-bind="{ ...$attrs, ...forwarded }"
+                v-bind="{ ...$attrs, ...forwardedProps }"
                 ref="inputRef"
                 data-slot="combobox-input"
+                v-on="forwardedEmits"
             />
             <ComboboxTrigger
                 v-if="showTriggerButton"
@@ -44,14 +45,15 @@ export interface ComboboxInputProps extends RekaComboboxInputProps {
     showCancelButton?: boolean
 }
 
-export interface ComboboxInputEmits extends RekaComboboxInputEmits {
+export type ComboboxInputEmits = RekaComboboxInputEmits & {
     'cancel': [void]
 }
 </script>
 
 <script setup lang="ts">
+import { delegateEmits } from '@lib/utils'
 import { reactiveOmit } from '@vueuse/core'
-import { ComboboxInput, useForwardPropsEmits } from 'reka-ui'
+import { ComboboxInput, useForwardProps } from 'reka-ui'
 import { useTemplateRef } from 'vue'
 import { ComboboxAnchor, ComboboxCancel, ComboboxTrigger } from '.'
 
@@ -67,7 +69,9 @@ const emits = defineEmits<ComboboxInputEmits>()
 
 const delegatedProps = reactiveOmit(props, 'showCancelButton', 'showTriggerButton')
 
-const forwarded = useForwardPropsEmits(delegatedProps, emits)
+const forwardedProps = useForwardProps(delegatedProps)
+
+const forwardedEmits = delegateEmits<ComboboxInputEmits>(emits, 'cancel')
 
 const inputRef = useTemplateRef('inputRef')
 </script>

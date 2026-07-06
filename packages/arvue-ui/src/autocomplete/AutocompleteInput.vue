@@ -12,9 +12,10 @@
             :reference="inputRef?.$el"
         >
             <AutocompleteInput
-                v-bind="{ ...$attrs, ...forwarded }"
+                v-bind="{ ...$attrs, ...forwardedProps }"
                 ref="inputRef"
                 data-slot="autocomplete-input"
+                v-on="forwardedEmits"
             />
             <AutocompleteTrigger
                 v-if="showTriggerButton"
@@ -44,14 +45,15 @@ export interface AutocompleteInputProps extends RekaAutocompleteInputProps {
     showCancelButton?: boolean
 }
 
-export interface AutocompleteInputEmits extends RekaAutocompleteInputEmits {
+export type AutocompleteInputEmits = RekaAutocompleteInputEmits & {
     'cancel': [void]
 }
 </script>
 
 <script setup lang="ts">
+import { delegateEmits } from '@lib/utils'
 import { reactiveOmit } from '@vueuse/core'
-import { AutocompleteInput, useForwardPropsEmits } from 'reka-ui'
+import { AutocompleteInput, useForwardProps } from 'reka-ui'
 import { useTemplateRef } from 'vue'
 import { AutocompleteAnchor, AutocompleteCancel, AutocompleteTrigger } from '.'
 
@@ -67,7 +69,9 @@ const emits = defineEmits<AutocompleteInputEmits>()
 
 const delegatedProps = reactiveOmit(props, 'showCancelButton', 'showTriggerButton')
 
-const forwarded = useForwardPropsEmits(delegatedProps, emits)
+const forwardedProps = useForwardProps(delegatedProps)
+
+const forwardedEmits = delegateEmits<AutocompleteInputEmits>(emits, 'cancel')
 
 const inputRef = useTemplateRef('inputRef')
 </script>
