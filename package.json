@@ -11,12 +11,12 @@
     "license": "MIT",
     "packageManager": "pnpm@10.26.1",
     "devDependencies": {
-        "@antfu/eslint-config": "^8.2.0",
+        "@antfu/eslint-config": "^9.1.0",
         "@vue/eslint-config-prettier": "^10.2.0",
-        "@vue/eslint-config-typescript": "^14.7.0",
-        "eslint": "^10.2.1",
-        "eslint-plugin-vue": "~10.9.0",
+        "@vue/eslint-config-typescript": "^14.9.0",
+        "eslint": "^10.6.0",
+        "eslint-plugin-vue": "~10.9.2",
         "typescript": "~6.0.3",
-        "vue-tsc": "^3.2.7"
+        "vue-tsc": "^3.3.6"
     }
 }
