@@ -40,6 +40,11 @@ export default defineConfig({
         },
         theme: {
             title: 'Arvue UI',
+            logo: {
+                square: '../img/logo.svg',
+                light: '../img/logo.svg',
+                dark: '../img/logo.svg',
+            },
         },
     },
     server: {
