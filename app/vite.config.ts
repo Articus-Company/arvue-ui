@@ -6,7 +6,11 @@ import webasyst from 'vite-plugin-webasyst'
 // https://vite.dev/config/
 export default defineConfig({
     plugins: [
-        vue(),
+        vue({
+            template: {
+                transformAssetUrls: false,
+            },
+        }),
         webasyst({ input: 'src/main.ts' }),
     ],
     resolve: {
